@@ -5,6 +5,8 @@ import tflearn
 import random
 from nltk.stem.lancaster import LancasterStemmer
 
+nltk.download('punkt')
+
 import json
 with open('intents.json') as file:
     data = json.load(file) #loads the contents of the file into a dictionary data.
@@ -25,7 +27,7 @@ for intent in data['intents']:  #loops through each intent in the 'data' diction
         
     if intent['tag'] not in labels:  #checks if the tag of the current intent is not in the labels list. If so, it adds the tag to the labels list.
         labels.append(intent['tag'])
-
+# print(words)
 # Stem the words and remove duplicates, then sort the words
 words = [stemmer.stem(w.lower()) for w in words if w != "?"]
 words = sorted(list(set(words)))
@@ -73,7 +75,7 @@ training = numpy.array(training)
 output = numpy.array(output)
 
 # Reset the default tensorflow graph
-tensorflow.reset_default_graph()
+tensorflow.compat.v1.reset_default_graph()
 
 # Define the neural network
 # Creating the Neural Network with tflearn library
@@ -130,16 +132,16 @@ def chat():
         tag = labels[results_index]
 
         # Checking if the predicted probability is greater than 0.7
-        if results[results_index] > 0.7:
+        # if results[results_index] > 0.7:
             # Getting the responses for the category
-            for tg in data["intents"]:
-                if tg['tag'] == tag:
-                    responses = tg['responses']
+        for tg in data["intents"]:
+            if tg['tag'] == tag:
+                responses = tg['responses']
 
             # Printing random response from the responses list
             print(random.choice(responses))
-        else:
-            print("I didn't understand that, please try again.")
+        # else:
+            # print("I didn't understand that, please try again.")
 
 # Starting the chat with the bot
 chat()
