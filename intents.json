@@ -1,40 +1,42 @@
 {"intents":[
-{
-"tag":"greetings",
-"patterns":["hello","I need some information","help","I am looking for someone to provide me some packages","hi"],
-"responses":["Hello","Welcome","What can I do for you?","Welcome To SayabiDevs...","Good to see you, how can I help?","What type of services are you looking for?"]
-},
-{
-"tag":"services",
-"patterns":["What are your services","Tell me something about your company","What services does Sayabidevs provide","What are your domain of services"],
-"responses":["We provide services related to Web development, Artificial Intelligence and App Development.","We at SayabiDevs provide you end to end solution for all your business and tech needs!!"]
-},
-{     
-"tag":"Talk with Rep",
-"patterns":["I want to discuss with a Web developer","Web dev","AI","Web Dev","App Dev","I want to discuss about AI / Artificial Intelligence.","I am interested in working with your company ","please email me "],
-"responses":["Please drop your email","one of rep will reach you please drop your email","Just mention your requirements here and i will provide you with details on your email "]
-},
-{  
-"tag":"info",
-"patterns":["Who am i talking to","who are you","who created you"],
-"responses":["Hello i am Bot","I am a bot created by Sayabidevs!"]
-},
-{
-"tag":"location",
-"patterns":["Where are you situated","your office locations","where are you physically located","can we meet in person?"],
-"responses":["We currently operate online only.","We are a virtual company from Pakistan","We can conduct a session online."]}
-,
-{
-"tag":"availability",
-"patterns":["What are your working hours","Are you available right now","Working hours"],
-"responses":["Yes we are available right now and whenever you want.","All year round, 24/7!"]},
-{
-"tag":"past client",
-"patterns":["Client History","can you name some of your past clients","Who are your clients"],
-"responses":["Sure you check up reviews section of our website","Please visit our website for info about our past clients"]},
-{
-"tag":"client",
-"patterns":["Which clients do you deal with","Do you work on international projects"],
-"responses":["We have international and national clients!","We welcome all national and international projects."]
-}
-]}
+    {
+    "tag":"greetings",
+    "patterns":["Hello","Good morning","Good afternoon","I need assistance","Help","I am seeking information","Hi","Greetings"],
+    "responses":["Hello, how may I assist you today?","Welcome, how may I be of service to you?","Good to see you, what information are you looking for?","Greetings, what can I help you with?","Hi there, what kind of information are you seeking?"]
+    },
+    {
+    "tag":"services",
+    "patterns":["What services do you offer","Can you give me a brief about your company","What services does your company provide","What is your area of expertise"],
+    "responses":["Our company provides services in the areas of Web Development, Artificial Intelligence, and App Development.","We offer comprehensive solutions for all your business and tech needs at SayabiDevs."]
+    },
+    {
+    "tag":"Talk with Representative",
+    "patterns":["I want to speak with a Web developer","Web development discussion","Artificial Intelligence discussion","App Development discussion","I am interested in Artificial Intelligence services","I would like to inquire about working with your company","Can you send me more information"],
+    "responses":["Please provide your email address and we will have a representative reach out to you.","A representative will be happy to assist you, please provide your email address.","Kindly leave your requirements and email address, we will send you more information."]
+    },
+    {
+    "tag":"info",
+    "patterns":["May I know who I am speaking with","Who are you","Who created you","What is your name?","name?","name"],
+    "responses":["You are speaking with a bot.","I am a bot created by SayabiDevs.","I am an AI language model created by SayabiDevs."]
+    },
+    {
+    "tag":"location",
+    "patterns":["Where is your company located","Can you tell me about your office locations","Where are you situated physically","Is it possible to meet in person"],
+    "responses":["We are an online-based company from Pakistan.","At the moment, we only offer virtual services.","It is possible to conduct virtual sessions."]
+    },
+    {
+    "tag":"availability",
+    "patterns":["What are your business hours","Are you available now","Working hours"],
+    "responses":["Yes, we are available 24/7 all year round.","We are always here to assist you."]
+    },
+    {
+    "tag":"past client",
+    "patterns":["Client history","Can you give me a list of your past clients","Who have you worked with"],
+    "responses":["Please refer to the reviews section of our website for information on our past clients.","You may find information on our past clients on our website."]
+    },
+    {
+    "tag":"client",
+    "patterns":["What type of clients do you work with","Do you take on international projects"],
+    "responses":["We welcome both national and international clients.","We are equipped to handle both national and international projects."]
+    }
+    ]}
