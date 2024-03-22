@@ -1,5 +1,3 @@
-### Chatbot README
-
 This repository contains code for a simple chatbot implemented using Python and TensorFlow. The chatbot is trained on a dataset of intents stored in a JSON file. It utilizes a bag of words approach along with a neural network implemented using TensorFlow to classify user inputs and generate appropriate responses.
 
 #### Requirements
